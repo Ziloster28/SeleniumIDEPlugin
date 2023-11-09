@@ -1,0 +1,111 @@
+{
+  "id": "23c761f3-82fc-401c-a092-4fbe44a4e939",
+  "version": "2.0",
+  "name": "MIMS.COM SSO PAGE",
+  "url": "https://www.mims.com",
+  "tests": [{
+    "id": "2f3b9850-e5af-4d9c-923b-ac793525b629",
+    "name": "MIMS.COM SSO page Selenium IDE testing",
+    "commands": [{
+      "id": "f375e111-b762-4488-9756-56a478a9b04a",
+      "comment": "",
+      "command": "open",
+      "target": "/?_gl=1*1tzw2ro*_ga*MjAxNTA4MDQ0MC4xNjk5NTE4OTEy*_ga_P4JX9J65W6*MTY5OTUxODkxMi4xLjEuMTY5OTUxOTMyOC4wLjAuMA..",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1f7ebd1-8beb-46a2-9252-52581891dc74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e692e6c8-82a6-4310-b469-288e8dc0b90a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container",
+      "targets": [
+        ["css=.container", "css:finder"],
+        ["xpath=//div[@id='stickyBarMobile']/div", "xpath:idRelative"],
+        ["xpath=//header/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6657cb53-c148-4813-ac55-d84148bf74ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container > .float-left",
+      "targets": [
+        ["css=.container > .float-left", "css:finder"],
+        ["xpath=//img[contains(@src,'https://mimsshst.blob.core.windows.net/common-resources/Images/header/hamburger_icon.png')]", "xpath:img"],
+        ["xpath=//div[@id='stickyBarMobile']/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "672e3b7a-50da-4059-8655-0848f781d526",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a_signin > .menu-item",
+      "targets": [
+        ["css=.a_signin > .menu-item", "css:finder"],
+        ["xpath=//div[@id='accordion']/div[2]/div[6]/a/span", "xpath:idRelative"],
+        ["xpath=//div[6]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0da3d85d-c91a-4274-af7a-27526dfab49b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.forgot-pwd-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='signInForm']/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.mims.com/account/forgetpassword?_gl=1*1ll3995*_ga*MjAxNTA4MDQ0MC4xNjk5NTE4OTEy*_ga_P4JX9J65W6*MTY5OTUxODkxMi4xLjEuMTY5OTUxOTQ5OS4wLjAuMA..')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd647faf-be9a-47cc-814c-d7af601cc77a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back to Sign In",
+      "targets": [
+        ["linkText=Back to Sign In", "linkText"],
+        ["css=.default-link-black", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to Sign In')]", "xpath:link"],
+        ["xpath=//div[@id='divOuterContainer']/div/div/form/div/div[2]/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/account/signin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "880666d8-c135-44d4-85fb-29a1ac6b6df5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.padding-top-5",
+      "targets": [
+        ["css=.padding-top-5", "css:finder"],
+        ["xpath=//a[@id='btnSignUp']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6c115cf0-e168-480a-8050-45ee254ecc6d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2f3b9850-e5af-4d9c-923b-ac793525b629"]
+  }],
+  "urls": ["https://www.mims.com/"],
+  "plugins": []
+}
